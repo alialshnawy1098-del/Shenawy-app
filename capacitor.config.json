@@ -1,0 +1,8 @@
+{
+  "appId": "com.shenawy.app",
+  "appName": "شناوي",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
