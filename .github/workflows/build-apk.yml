@@ -26,6 +26,13 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
+    - name: Ensure www directory exists
+      run: |
+        mkdir -p www
+        if [ ! -f "www/index.html" ]; then
+          echo "<h1 style='text-align:center; margin-top:50px;'>تطبيق شناوي شغال ✅</h1>" > www/index.html
+        fi
+
     - name: Add Android Platform
       run: npx cap add android
 
